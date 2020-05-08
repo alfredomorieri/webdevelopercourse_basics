@@ -1,0 +1,21 @@
+  body{
+    background-color: #d4ebd0;
+    font-family: 'Rubik', sans-serif;
+  }
+  hr {
+    border-style: none;
+    border-top: 5px dotted red;
+    width: 5%;
+  }
+  h1, h3 {
+    color: #856c8b;
+  }
+  h1 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  h3{
+    font-family: 'Rubik', sans-serif;
+  }
+  td.label {
+    text-align: right;
+  }
