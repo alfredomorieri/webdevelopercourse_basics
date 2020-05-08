@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contacts</title>
+  <style media="screen">
+    td.label {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <form action="mailto:notmyrealmail@ymail.com" method="post" enctype="text/plain">
+      <table>
+        <tr>
+          <td class="label"><label for="yourName">Your name</label></td>
+          <td><input type="text" id="yourName" name="yourName"></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="yourEmail">Your email</label></td>
+          <td><input type="email" id="yourEmail" name="yourEmail"></td>
+        </tr>
+        <tr>
+          <td class="label"><label for="yourMessage">Type your messagge here</label></td>
+          <td><textarea id="yourMessage" name="yourMessage" rows="8" cols="70"></textarea></td>
+        </tr>
+      </table>
+      <center><input type="submit" value="Submit"></center>
+    </form>
+  </div>
+</body>
+
+</html>
