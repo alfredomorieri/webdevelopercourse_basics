@@ -1,111 +1,242 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title>Curriculum Vitae</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-
+  <title>TinDog</title>
+  <!--inclusione di BS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--libreria personalizzata sovrascrive BS in caso di conflitti. HTML esegue codice top-down-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--inclusione font-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+  <!--inclusione di fontawesome-->
+  <script src="https://kit.fontawesome.com/8bd88c8cff.js" crossorigin="anonymous"></script>
+  <!-- BS scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <table cellpadding="10">
-    <tr>
-      <td rowspan="4">
-        <img src="pics/profile_pic.jpg" alt="Gigi la trottola" style="border-radius:50%;
-         width:200px; height:200px;">
-      </td>
-      <td>
-        <h1>Alfredo Italiano</h1>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>Linguist</b> and <b>Teacher</b> of <em>Italian as a Second/Foreign Language</em>
-      </td>
-    </tr>
-    <tr>
-      <td>I enjoy reading books, especially linguistics-related. <strong>London,
-          Cork, and Beijing</strong> used to be my home over the last few years.</td>
-    </tr>
-    <tr>
-      <td><i>Dunno why you'd contact me, <a href="contacts.html" target="_blank">here</a> is the contact form anyways</i></td>
-    </tr>
-  </table>
-  <hr>
-  <br>
 
-  <table>
-    <caption>Teaching and Readings</caption>
-    <thead>
-      <th>
-        <h3>Teaching Activity</h3>
-      </th>
-      <th>
-        <h3>Favourite Books</h3>
-      </th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <ul style="list-style-type:square; list-style-position:outside;">
-            <li>Lecturer of Italian as a Foreign Language at 北京化工大学</li>
-            <li>Lecturer of Italian as a Second Language at UCEAP</li>
-            <li>Teacher of Italian as Second Language for Chinese Speakers</li>
-            <li>Teacher of English for Italian Speakers - Distant Learning</li>
+  <section id="title" class="colored">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="#" class="navbar-brand">tindog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto" style="float:right; text-align: right;">
+            <li class="nav-item"><a href="#" class="nav-link ">Chi siamo</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link" href="#" data-toggle="dropdown">I nostri prodotti</a>
+              <ul class="dropdown-menu fade-up">
+                <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link ">Lo staff</a></li>
+            <li class="nav-item"><a href="#" class="nav-link ">Offerta formativa</a></li>
+            <li class="nav-item"><a href="#" class="nav-link ">Contattaci</a></li>
           </ul>
-        </td>
-        <td>
-          <ul style="list-style-type:circle; list-style-position:outside;">
-            <li>Language Death <i>by David Crystal</i></li>
-            <li>Vanishing Voices: The Extinction of World's Languages <i>by Suzanne Romaine</i></li>
-            <li>Harry Potter <i>by J.K. Rowling</i></li>
-            <li>Il Ponte di San Giacomo <i>by De Martino</i></li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <h3>Skills</h3>
-  <table>
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>Programming</td>
-            <td>⭐⭐❌❌❌</td>
-          </tr>
-          <tr>
-            <td>Copywriting</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Public Speaking</td>
-            <td>⭐⭐⭐❌❌</td>
-          </tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-            <td>Presentation</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Team-working</td>
-            <td>⭐⭐⭐⭐❌</td>
-          </tr>
-          <tr>
-            <td>Attention to detail</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+        </div>
+
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg"><span class="fab fa-apple"></span> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg"><span class="fab fa-google-play"></span> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-img" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features" class="white">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div style="text-align:center;">
+            <!-- <a href="#"> -->
+            <i class="fas fa-check-circle"></i>
+            <!-- </a> -->
+          </div>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p class="desc">So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="col-lg-4">
+          <div style="text-align:center;">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 class="feature-title">Elite Clientele</h3>
+          <p class="desc">We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="col-lg-4">
+          <div style="text-align:center;">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p class="desc">Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials" class="colored">
+
+    <div id="carouselTestimonials" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselTestimonials" data-slide-to="1"></li>
+          <!-- <li data-target="#carouselTestimonials" data-slide-to="2"></li> -->
+        </ol>
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img src="images/dog-img.jpg" alt="dog-profile" class="testimonial-img">
+
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-img" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselTestimonials" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press" class="colored">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing" class="white">
+    <div class="container-fluid">
+
+
+      <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for your and your dog.</p>
+      <div class="row">
+        <div class="pricing-col col-lg-4 col-md-6">
+
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Chihuahua</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-h2">Free</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-col col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-h2">$49 / mo</h2>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-col col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Mastiff</h3>
+            </div>
+            <div class="card-body">
+
+              <h2 class="pricing-h2">$99 / mo</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta" class="colored">
+    <div class="container-fluid">
+
+
+      <h3 class="cta-heading"> Find the True Love of Your Dog's Life Today.</h3>
+      <button type="button" class="btn btn-dark btn-lg" style="margin:2% 4% 0;"><span class="fab fa-apple"></span> Download</button>
+      <button type="button" class="btn btn-outline-light btn-lg" style="margin:2% 4% 0;"><span class=" fab fa-google-play"></span> Download</button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer" class="white">
+    <div class="container-fluid">
+
+
+      <span class="fab fa-facebook-f social"></span>
+      <span class="fas fa-envelope social"> </span>
+      <span class="fab fa-instagram social"> </span>
+      <span class="fab fa-twitter social"> </span>
+
+
+      <p>© Copyright 2018 TinDog</p>
+    </div>
+  </footer>
+
+
 </body>
 
 </html>
