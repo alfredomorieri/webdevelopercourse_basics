@@ -91,9 +91,8 @@ section.white{
 
 .title-img {
 	transform: rotate(29deg);
-	width: 60%;
+	width: 25%;
 	position: absolute;
-	right:10%;
 }
 
 @media (max-width: 992px) {
