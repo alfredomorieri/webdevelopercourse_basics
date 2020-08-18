@@ -1,13 +1,3 @@
-/* ============ only desktop view ============ */
-@media all and (min-width: 767px) {
-	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
-	.navbar .nav-item:hover .nav-link{ color: #fff;  }
-	.navbar .dropdown-menu.fade-down{ top:180%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-	.navbar .dropdown-menu.fade-up{ top:60%;  }
-	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
-}
-/* ============ desktop view .end// ============ */
-
 /*classi di selettori HTML*/
 
 body{
@@ -106,10 +96,11 @@ section.white{
 	right:10%;
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 992px) {
 	.title-img{
 		position: static;
 		transform: none;
+		margin-left: 37.5%;
 	}
 
 	#title{
